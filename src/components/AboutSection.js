@@ -6,6 +6,9 @@ import { Wrapper, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
 
+//wave
+import Wave from "./Wave";
+import styled from "styled-components";
 function AboutSection() {
 	return (
 		<Wrapper>
@@ -32,6 +35,7 @@ function AboutSection() {
 			<Image>
 				<motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
 			</Image>
+			<Wave />
 		</Wrapper>
 	);
 }
