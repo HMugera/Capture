@@ -5,42 +5,21 @@ import { motion } from "framer-motion";
 import { Wrapper, Description, Image, Hide } from "../styles";
 function AboutSection() {
 	//Framer motion variance
-	const titleAnim = {
-		hidden: { opacity: 0 },
-		show: { opacity: 1, transition: { duration: 2 } },
-	};
 
-	const container = {
-		hidden: { x: 100 },
-		show: {
-			x: 0,
-			transition: {
-				duration: 0.75,
-				ease: "easeOut",
-				staggerChildren: 1,
-				// when: "beforeChildren",
-			},
-		},
-	};
 	return (
 		<Wrapper>
 			<Description>
-				<motion.div
-					className="title"
-					variants={container}
-					animate="show"
-					initial="hidden"
-				>
+				<motion.div className="title">
 					<Hide>
-						<motion.h2 variants={titleAnim}>Let us help you capture </motion.h2>
+						<motion.h2>Let us help you capture </motion.h2>
 					</Hide>
 					<Hide>
-						<motion.h2 variants={titleAnim}>
+						<motion.h2>
 							your best <span>memories </span>
 						</motion.h2>
 					</Hide>
 					<Hide>
-						<motion.h2 variants={titleAnim}>forever.</motion.h2>
+						<motion.h2>forever.</motion.h2>
 					</Hide>
 				</motion.div>
 				<p>
