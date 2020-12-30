@@ -1,44 +1,35 @@
 import React from "react";
 import home1 from "../img/home1.png";
-//Styled
-import styled from "styled-components";
+
+import { Wrapper, Description, Image, Hide } from "../styles";
 function AboutSection() {
 	return (
-		<About>
-			<div className="description">
+		<Wrapper>
+			<Description>
 				<div className="title">
-					<div className="hide">
+					<Hide>
 						<h2>Let us help you capture </h2>
-					</div>
-					<div className="hide">
+					</Hide>
+					<Hide>
 						<h2>
-							your and <span>memories </span> and make your
+							your best <span>memories </span>
 						</h2>
-					</div>
-					<div className="hide">
-						<h2>dreams come true.</h2>
-					</div>
+					</Hide>
+					<Hide>
+						<h2>forever.</h2>
+					</Hide>
 				</div>
 				<p>
 					Contact us for any photography or videography ideas.We have
 					professionald with amazing skills
 				</p>
 				<button>Contact us</button>
-			</div>
-			<div className="image">
+			</Description>
+			<Image>
 				<img src={home1} alt="guy with a camera" />
-			</div>
-		</About>
+			</Image>
+		</Wrapper>
 	);
 }
-
-const About = styled.div`
-	min-height: 90vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5rem 10rem;
-	color: white;
-`;
 
 export default AboutSection;

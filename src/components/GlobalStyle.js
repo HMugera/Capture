@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     background:#1b1b1b;
+    font-family: 'Inter', sans-serif;
 }
 
 button{
@@ -17,6 +18,7 @@ button{
     font-size:1.1rem;
     padding:1rem 2rem;
     cursor:pointer;
+    font-family: 'Inter', sans-serif;
     border:3px solid #23d997;
     background:transparent;
     color:white;
@@ -38,6 +40,17 @@ h2{
     h3{
 color:white;
     }
+    h4{
+        font-weight:bold;
+      
+    }
+    a{
+        font-size:1.1rem;
+    }
+    span{
+        font-weight:bold;
+        color:#23d997;
+    }
     p{
 padding:3rem 0rem;
 color:#ccc;
@@ -47,3 +60,6 @@ line-height:150%;
 `;
 
 export default GlobalStyle;
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lobster', cursive;
