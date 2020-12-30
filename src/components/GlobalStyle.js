@@ -15,7 +15,7 @@ body{
 
 button{
     font-weight:bold;
-    font-size:1.1rem;
+    font-size:1.0rem;
     padding:1rem 2rem;
     cursor:pointer;
     font-family: 'Inter', sans-serif;
@@ -42,10 +42,11 @@ color:white;
     }
     h4{
         font-weight:bold;
+        font-size:2rem;
       
     }
     a{
-        font-size:1.1rem;
+        font-size:1.0rem;
     }
     span{
         font-weight:bold;
@@ -54,7 +55,7 @@ color:white;
     p{
 padding:3rem 0rem;
 color:#ccc;
-font-size:1.4rem;
+font-size:1.2rem;
 line-height:150%;
     }
 `;
