@@ -8,7 +8,8 @@ import { titleAnim, fade, photoAnim } from "../animation";
 
 //wave
 import Wave from "./Wave";
-import styled from "styled-components";
+
+import { Link } from "react-router-dom";
 function AboutSection() {
 	return (
 		<Wrapper>
@@ -30,7 +31,9 @@ function AboutSection() {
 					Contact us for any photography or videography ideas.We have
 					professionald with amazing skills
 				</motion.p>
-				<motion.button variants={fade}>Contact us</motion.button>
+				<Link to="/contact">
+					<motion.button variants={fade}>Contact us</motion.button>
+				</Link>
 			</Description>
 			<Image>
 				<motion.img variants={photoAnim} src={home1} alt="guy with a camera" />

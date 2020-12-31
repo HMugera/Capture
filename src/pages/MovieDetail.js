@@ -16,8 +16,7 @@ function MovieDetail() {
 	useEffect(() => {
 		const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
 		setMovie(currentMovie[0]);
-		console.log(movie);
-	}, [movies, url]);
+	}, [movies, movie, url]);
 	return (
 		<>
 			{movie && (
@@ -74,6 +73,10 @@ const Awards = styled.div`
 	margin: 5rem 10rem;
 	align-items: center;
 	justify-content: space-around;
+	@media (max-width: 1300px) {
+		margin: 2rem;
+		display: block;
+	}
 `;
 const ImageDisplay = styled.div`
 	min-height: 50vh;

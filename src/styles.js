@@ -8,6 +8,11 @@ export const Wrapper = styled(motion.div)`
 	justify-content: space-between;
 	padding: 5rem 10rem;
 	color: white;
+	@media (max-width: 1300px) {
+		display: block;
+		padding: 2rem 2rem;
+		text-align: center;
+	}
 `;
 export const Description = styled.div`
 	flex: 1;
@@ -15,6 +20,12 @@ export const Description = styled.div`
 	z-index: 2;
 	h2 {
 		font-weight: lighter;
+	}
+	@media (max-width: 1300px) {
+		padding: 0;
+		button {
+			margin: 2rem 0rem 5rem 0rem;
+		}
 	}
 `;
 export const Image = styled.div`
@@ -32,4 +43,4 @@ export const Hide = styled.div`
 	overflow: hidden;
 `;
 
-export default { Wrapper, Image, Description, Hide };
+// export default { Wrapper, Image, Description, Hide };

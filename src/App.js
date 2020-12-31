@@ -1,16 +1,27 @@
+import { useEffect } from "react";
+
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation, useHistory } from "react-router-dom";
 import MovieDetail from "./pages/MovieDetail";
 
 //animation
 import { AnimatePresence } from "framer-motion";
 function App() {
 	const location = useLocation();
+	const history = useHistory();
+	const pageLocation = history.location;
+	//ScrollTop
+	useEffect(() => {
+		window.scroll({
+			top: 10,
+			left: 0,
+		});
+	}, [pageLocation]);
 
 	return (
 		<div className="App">
