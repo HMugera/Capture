@@ -29,7 +29,7 @@ function AboutSection() {
 				</motion.div>
 				<motion.p variants={fade}>
 					Contact us for any photography or videography ideas.We have
-					professionald with amazing skills
+					professionals with amazing skills
 				</motion.p>
 				<Link to="/contact">
 					<motion.button variants={fade}>Contact us</motion.button>
