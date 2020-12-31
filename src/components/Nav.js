@@ -11,7 +11,7 @@ function Nav() {
 		<StyledNav>
 			<h1>
 				<Link to="/" id="logo">
-					Capture
+					The Capture Project
 				</Link>
 			</h1>
 			<ul>
