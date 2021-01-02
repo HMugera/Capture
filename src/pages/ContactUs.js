@@ -168,7 +168,9 @@ const ContactBox = styled(motion.div)`
 const ContactForm = styled.div`
 	height: 400px;
 	width: 600px;
-	order: 1;
+	@media (max-width: 1300px) {
+		margin-bottom: 180px;
+	}
 `;
 const InputBox = styled.div`
 	display: flex;
@@ -176,6 +178,9 @@ const InputBox = styled.div`
 	align-items: flex-start;
 	margin: 0 0 35px 0;
 	width: 47%;
+	@media (max-width: 1300px) {
+		width: 100%;
+	}
 	label {
 		align-self: flex-start;
 		color: #fff;
