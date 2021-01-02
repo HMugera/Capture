@@ -54,9 +54,9 @@ function ContactUs() {
 										<label htmlFor="message">Write your message here ...</label>
 										<textarea name="" required></textarea>
 									</MessageBox>
-									<div>
+									<SendButton>
 										<button>Send</button>
-									</div>
+									</SendButton>
 								</ContactBox>
 							</Hide>
 						</ContactForm>
@@ -147,6 +147,7 @@ const ContactWrapper = styled(motion.div)`
 	align-items: center;
 
 	@media (max-width: 1300px) {
+		padding: 2rem;
 		gap: 100px;
 		font-size: 1rem;
 		flex-direction: column;
@@ -168,28 +169,28 @@ const ContactBox = styled(motion.div)`
 const ContactForm = styled.div`
 	height: 400px;
 	width: 600px;
+	align-items: center;
+	justify-content: center;
 	@media (max-width: 1300px) {
-		margin-bottom: 180px;
+		margin-bottom: 130px;
 	}
 `;
 const InputBox = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	margin: 0 0 35px 0;
+	align-items: center;
+	margin-bottom: 35px;
 	width: 47%;
 	@media (max-width: 1300px) {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	label {
-		align-self: flex-start;
 		color: #fff;
 		font-weight: bolder;
 		font-size: 12px;
 	}
 	input {
-		width: 100% !important;
-		margin: 0;
 		padding: 10px 0px 5px 0px;
 		font-size: 25px;
 		font-weight: 300;
@@ -212,10 +213,10 @@ const InputBox = styled.div`
 	}
 `;
 const MessageBox = styled(InputBox)`
-	width: 100% !important;
+	width: 100%;
 	textarea {
 		min-height: 100px;
-		width: 100% !important;
+		width: 100vw;
 		padding: 5px 0;
 		resize: none;
 		font-size: 20px;
@@ -226,6 +227,12 @@ const MessageBox = styled(InputBox)`
 		outline: none;
 		border-bottom: 2px solid #777;
 	}
+`;
+const SendButton = styled.div`
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 
 const ContactTitle = styled.h2`
