@@ -16,7 +16,10 @@ function Nav() {
 			</h1>
 			<ul>
 				<li>
-					<Link to="/"> About Us</Link>
+					<Link to="/">
+						{" "}
+						<h5>About</h5>
+					</Link>
 					<Line
 						transition={{ duration: 0.75 }}
 						initial={{ width: "0%" }}
@@ -24,7 +27,9 @@ function Nav() {
 					/>
 				</li>
 				<li>
-					<Link to="/work">Our Work</Link>
+					<Link to="/work">
+						<h5>Our Work</h5>
+					</Link>
 					<Line
 						transition={{ duration: 0.75 }}
 						initial={{ width: "0%" }}
@@ -32,7 +37,9 @@ function Nav() {
 					/>
 				</li>
 				<li>
-					<Link to="/contact">Contact Us</Link>
+					<Link to="/contact">
+						<h5>Contact Us</h5>
+					</Link>
 					<Line
 						transition={{ duration: 0.75 }}
 						initial={{ width: "0%" }}
@@ -63,8 +70,9 @@ const StyledNav = styled.nav`
 		display: flex;
 		list-style: none;
 	}
+
 	#logo {
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		font-family: "Lobster", cursive;
 		font-weight: lighter;
 	}
