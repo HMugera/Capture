@@ -183,6 +183,9 @@ const InputBox = styled.div`
 	width: 47%;
 	@media (max-width: 1300px) {
 		width: 100%;
+		align-items: center;
+		text-align: center;
+
 		margin-bottom: 10px;
 	}
 	label {
@@ -199,6 +202,11 @@ const InputBox = styled.div`
 		border: none;
 		outline: none;
 		border-bottom: 2px solid #777;
+		@media (max-width: 1300px) {
+			width: 100vw;
+			align-items: center;
+			text-align: center;
+		}
 	}
 	/* Chrome, Safari, Edge, Opera */
 	input::-webkit-outer-spin-button,
@@ -226,6 +234,11 @@ const MessageBox = styled(InputBox)`
 		border: none;
 		outline: none;
 		border-bottom: 2px solid #777;
+		@media (max-width: 1300px) {
+			width: 100vw;
+			align-items: center;
+			text-align: center;
+		}
 	}
 `;
 const SendButton = styled.div`
