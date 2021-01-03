@@ -137,7 +137,7 @@ const ContactStyle = styled(Wrapper)`
 	}
 `;
 const ContactWrapper = styled(motion.div)`
-	padding: 5rem 5rem 10rem 5rem;
+	padding: 5rem 5rem 10rem 8rem;
 	justify-content: center;
 	align-items: center;
 	background: #1b1b1b;
@@ -194,7 +194,7 @@ const InputBox = styled.div`
 		font-size: 12px;
 	}
 	input {
-		padding: 10px 0px 5px 0px;
+		padding: 10px 0px 5px 15px;
 		font-size: 25px;
 		font-weight: 300;
 		color: #fff;

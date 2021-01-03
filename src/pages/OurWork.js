@@ -1,5 +1,5 @@
 import React from "react";
-import athlete from "../img/athlete-small.png";
+import wed1 from "../img/wed1.jpg";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 import styled from "styled-components";
@@ -35,23 +35,23 @@ function OurWork() {
 				<Frame5 variants={slider}></Frame5>
 			</motion.div>
 			<Movie>
-				<motion.h2 variants={fade}>The Athlete</motion.h2>
+				<motion.h2 variants={fade}>Weddings</motion.h2>
 				<motion.div variants={lineAnim} className="line"></motion.div>
-				<Link to="/work/the-athlete">
+				<Link to="/work/weddings">
 					<Hide>
-						<motion.img variants={photoAnim} src={athlete} alt="athlete" />
+						<motion.img variants={photoAnim} src={wed1} alt="athlete" />
 					</Hide>
 				</Link>
 			</Movie>
 			<Movie ref={element} variants={fade} animate={controls} inital="hidden">
-				<motion.h2 variants={fade}>The Racer</motion.h2>
+				<motion.h2 variants={fade}>Birthdays</motion.h2>
 				<motion.div variants={lineAnim} className="line"></motion.div>
 				<Link to="/work/the-racer">
 					<img src={theracer} alt="theracer" />
 				</Link>
 			</Movie>
 			<Movie ref={element2} variants={fade} animate={controls2} inital="hidden">
-				<motion.h2 variants={fade}>Good Times</motion.h2>
+				<motion.h2 variants={fade}>Graduations</motion.h2>
 				<motion.div variants={lineAnim} className="line"></motion.div>
 				<Link to="/work/good-times">
 					<img src={goodtimes} alt="goodtimes" />
