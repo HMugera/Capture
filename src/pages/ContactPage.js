@@ -26,16 +26,11 @@ function ContactPage() {
 				<form action="">
 					<InputContainer>
 						<InputCont>
-							<label for="fname">First Name</label>
-							<input type="text" id="fname" name="firstname" />
+							<label for="fname">Full Name</label>
+							<input type="text" id="fname" name="fullname" />
 						</InputCont>
 					</InputContainer>
-					<InputContainer>
-						<InputCont>
-							<label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lastname" />
-						</InputCont>
-					</InputContainer>
+
 					<InputContainer>
 						<InputCont>
 							<label for="mobile">Mobile</label>
@@ -134,7 +129,7 @@ const ContactStyles = styled(Wrapper)`
 	align-items: center;
 	.line {
 		height: 0.5rem;
-		background: #23d997;
+		background: #fff;
 		margin-bottom: 3rem;
 	}
 	@media (max-width: 1300px) {
@@ -185,6 +180,17 @@ const InputContainer = styled.div`
 		color: #fff;
 		font-size: 15px;
 		font-weight: bolder;
+	}
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type="number"] {
+		-moz-appearance: textfield;
 	}
 `;
 
