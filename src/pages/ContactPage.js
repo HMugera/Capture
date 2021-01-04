@@ -145,7 +145,6 @@ const ContactStyles = styled(Wrapper)`
 `;
 
 const ContactContainer = styled.div`
-	width: 80vw;
 	padding: 0px 10px;
 `;
 const FormContainer = styled.div`
