@@ -2,8 +2,9 @@ import { useEffect } from "react";
 
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
+import HomePage from "./pages/HomePage";
+
+import ContactPage from "./pages/ContactPage";
 import OurWork from "./pages/OurWork";
 
 import { Route, Switch, useLocation, useHistory } from "react-router-dom";
@@ -32,7 +33,7 @@ function App() {
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
 					<Route path="/" exact>
-						<AboutUs />
+						<HomePage />
 					</Route>
 					<Route path="/work" exact>
 						<OurWork />
@@ -41,7 +42,7 @@ function App() {
 						<MovieDetail />
 					</Route>
 					<Route path="/contact">
-						<ContactUs />
+						<ContactPage />
 					</Route>
 				</Switch>
 			</AnimatePresence>

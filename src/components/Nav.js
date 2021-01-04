@@ -18,7 +18,7 @@ function Nav() {
 				<li>
 					<Link to="/">
 						{" "}
-						<h5>About</h5>
+						<h5>Home</h5>
 					</Link>
 					<Line
 						transition={{ duration: 0.75 }}

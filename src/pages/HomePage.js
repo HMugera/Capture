@@ -6,7 +6,7 @@ import ServicesSection from "../components/ServicesSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-function AboutUs() {
+function HomePage() {
 	return (
 		<motion.div
 			variants={pageAnimation}
@@ -21,4 +21,4 @@ function AboutUs() {
 	);
 }
 
-export default AboutUs;
+export default HomePage;
